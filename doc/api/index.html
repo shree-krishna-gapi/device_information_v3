@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 0.44.0">
+  <meta name="description" content="device_information API docs, for the Dart programming language.">
+  <title>device_information - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/gapi/DeviceInformationPlugin">device_information package</a></li>
+  </ol>
+  <div class="self-name">device_information</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="device-information">Device Information</h1>
+<p>A flutter plugin to get device information such as device IMEI number, model name, API level,CPU Type,Product Name etc for both android &amp; iOS.</p>
+<h2 id="installation">Installation</h2>
+<p>Add following dependency in pubspec.yaml file:</p>
+<pre class="language-bash"><code class="language-bash">device_information:^0.0.3
+</code></pre>
+<p>Install by running:</p>
+<pre class="language-bash"><code class="language-bash">$ flutter pub get 
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre class="language-dart"><code>import 'package:device_information/device_information.dart';
+
+try {
+      platformVersion = await DeviceInformation.platformVersion;
+      imeiNo = await DeviceInformation.deviceIMEINumber;
+      modelName = await DeviceInformation.deviceModel;
+      manufacturer = await DeviceInformation.deviceManufacturer;
+      apiLevel =  await DeviceInformation.apiLevel;
+      deviceName = await DeviceInformation.deviceName;
+      productName = await DeviceInformation.productName;
+      cpuType = await DeviceInformation.cpuName;
+      hardware = await DeviceInformation.hardware;
+    } on PlatformException {
+      platformVersion = 'Failed to get platform version.';
+    }
+</code></pre>
+<p>In android add the following permission:</p>
+<pre class="language-dart"><code>&lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;
+</code></pre>
+<p>Then for API targetting from Marshmallow, need to request runtime permissions.
+Although in iOS there is no need to specify permissions.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+<h2 id="developer-team">Developer Team:</h2>
+<p>Hina Hussain &amp; her team members (Kamran Khan, Abdul Sattar, Faiza Farooqui) :smile: :tada:</p>
+<h2 id="follow-me">Follow me</h2>
+<p><a href="https://gapi-developer.medium.com/creating-publisher-account-on-the-pub-dev-cf86b91cd2f">https://gapi-developer.medium.com/creating-publisher-account-on-the-pub-dev-cf86b91cd2f</a>
+<a href="https://hinahussaindev.blogspot.com/2021/05/creating-publisher-account-on-pubdev.html">https://hinahussaindev.blogspot.com/2021/05/creating-publisher-account-on-pubdev.html</a></p>
+<h2 id="license">License</h2>
+<p><a href="https://choosealicense.com/licenses/mit/">MIT</a></p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="device_information">
+  <span class="name"><a href="device_information/device_information-library.html">device_information</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="https://github.com/gapi/DeviceInformationPlugin">device_information package</a></li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">device_information</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="device_information/device_information-library.html">device_information</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    device_information
+      0.0.4
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
