@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.gapi.device_information_v3_example">
+    package="co.creativemind.device_information_example">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <application

@@ -1,4 +1,4 @@
-package com.gapi.device_information_v3;
+package co.creativemind.device_information;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -24,7 +24,10 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.plugin.common.MethodChannel;
+import io.flutter.plugin.common.MethodCall;
+import io.flutter.plugin.common.BinaryMessenger;
 
 /** DeviceInformationPlugin */
 public class DeviceInformationPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {

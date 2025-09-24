@@ -1,4 +1,4 @@
-group 'com.gapi.device_information_v3'
+group 'co.creativemind.device_information'
 version '1.0'
 
 buildscript {
@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace "com.gapi.device_information_v3_example"
+    namespace "co.creativemind.device_information_example"
     compileSdkVersion 33
 
     defaultConfig {

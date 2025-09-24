@@ -1,4 +1,4 @@
-package com.gapi.device_information_v3_example
+package co.creativemind.device_information_example
 
 import io.flutter.embedding.android.FlutterActivity
 

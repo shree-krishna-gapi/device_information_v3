@@ -48,7 +48,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Hina Hussain & her team members (Kamran Khan, Abdul Sattar, Faiza Farooqui) :smile: :tada:
 
 ## Follow me
-https://gapi-developer.medium.com/creating-publisher-account-on-the-pub-dev-cf86b91cd2f
+https://hina-hussain-developer.medium.com/creating-publisher-account-on-the-pub-dev-cf86b91cd2f
 https://hinahussaindev.blogspot.com/2021/05/creating-publisher-account-on-pubdev.html
 
 ## License
